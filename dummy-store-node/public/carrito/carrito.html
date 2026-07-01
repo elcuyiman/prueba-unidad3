@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Store - Compras</title>
+    <link rel="stylesheet" href="/shared/shared.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Dummy Store</div>
+        <div class="user-controls">
+            <a href="/tienda/tienda.html">Volver a la Tienda</a>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="form-container cart-container">
+            <h2>Procesar Compra</h2>
+            <div id="cartItems"></div>
+            <h3 id="totalPrice"></h3>
+            <div class="cart-actions">
+                <button class="btn-danger" id="btnCancel">Cancelar Compra</button>
+                <button class="btn-success" id="btnConfirm">Confirmar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">Dummy Store &copy; 2026</footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

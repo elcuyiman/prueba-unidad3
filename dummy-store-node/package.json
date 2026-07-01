@@ -1,0 +1,13 @@
+{
+  "name": "dummy-store",
+  "version": "1.0.0",
+  "description": "Tienda de videojuegos - Frontend por páginas (HTML/CSS/JS independientes) + Backend Node.js/Express con persistencia en archivo JSON.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

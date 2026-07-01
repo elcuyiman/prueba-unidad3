@@ -1,0 +1,64 @@
+/* admin.css - estilos exclusivos del panel de administración */
+.admin-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.admin-form { max-width: 500px; }
+.admin-form-actions { display: flex; gap: 10px; }
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.admin-table th, .admin-table td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.admin-table th { background: #f0ece2; }
+.admin-table img { width: 50px; height: 60px; object-fit: cover; }
+.mensaje-nuevo { background: #fff8e1; font-weight: bold; }
+
+.btn-small {
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--accent-color);
+    background: transparent;
+    color: var(--accent-color);
+    cursor: pointer;
+    margin-right: 4px;
+    font-size: 0.8rem;
+}
+.btn-small:hover { background: var(--accent-color); color: #fff; }
+.btn-small.btn-danger-outline { border-color: var(--danger-color); color: var(--danger-color); }
+.btn-small.btn-danger-outline:hover { background: var(--danger-color); color: #fff; }
+
+/* Combobox de categorías + panel de nueva categoría */
+#juegoCategoria {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+    background: #fff;
+}
+
+.nueva-categoria-panel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0.6rem;
+    padding: 0.6rem;
+    background: #f7f5f0;
+    border: 1px dashed var(--accent-color);
+    flex-wrap: wrap;
+}
+.nueva-categoria-panel input {
+    flex: 1;
+    min-width: 160px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Store - Panel Admin</title>
+    <link rel="stylesheet" href="/shared/shared.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Dummy Store · Admin</div>
+        <div class="user-controls">
+            <span class="bienvenida">Hola, <strong id="adminNombre"></strong></span>
+            <a href="/tienda/tienda.html">Ver Tienda</a>
+            <button id="btnCerrarSesionAdmin" class="btn-secondary">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="admin-section">
+            <h2 id="formTituloJuego">Agregar Juego</h2>
+            <form id="formJuego" class="admin-form" novalidate>
+                <input type="hidden" id="juegoId">
+                <div class="form-group">
+                    <label for="juegoTitulo">Título del juego</label>
+                    <input type="text" id="juegoTitulo">
+                    <span class="error-message" id="errorTitulo"></span>
+                </div>
+                <div class="form-group">
+                    <label for="juegoPrecio">Precio (USD)</label>
+                    <input type="number" step="0.01" id="juegoPrecio">
+                    <span class="error-message" id="errorPrecio"></span>
+                </div>
+                <div class="form-group">
+                    <label for="juegoCategoria">Categoría</label>
+                    <select id="juegoCategoria">
+                        <option value="">-- Selecciona una categoría --</option>
+                        <option value="__nueva__">+ Agregar nueva categoría...</option>
+                    </select>
+                    <span class="error-message" id="errorCategoria"></span>
+
+                    <div id="panelNuevaCategoria" class="nueva-categoria-panel" style="display:none;">
+                        <input type="text" id="nuevaCategoriaInput" placeholder="Nombre de la nueva categoría">
+                        <button type="button" class="btn-small" id="btnGuardarCategoria">Guardar categoría</button>
+                        <span class="error-message" id="errorNuevaCategoria"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="juegoImagen">URL Imagen de portada (obligatoria)</label>
+                    <input type="text" id="juegoImagen">
+                    <span class="error-message" id="errorImagen"></span>
+                </div>
+                <div class="admin-form-actions">
+                    <button type="submit" class="btn-primary">Guardar Juego</button>
+                    <button type="button" class="btn-secondary" id="btnCancelarEdicion">Cancelar Edición</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Juegos Registrados</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr><th>Portada</th><th>Título</th><th>Precio</th><th>Categoría</th><th>Acciones</th></tr>
+                </thead>
+                <tbody id="tablaJuegos"></tbody>
+            </table>
+        </section>
+
+        <section class="admin-section" id="mensajes">
+            <h2>Bandeja de Mensajes</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr><th>Usuario</th><th>Mensaje</th><th>Fecha</th><th>Estado</th><th>Acciones</th></tr>
+                </thead>
+                <tbody id="tablaMensajes"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

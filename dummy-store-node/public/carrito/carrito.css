@@ -1,0 +1,18 @@
+/* carrito.css - estilos exclusivos del carrito */
+.cart-container { max-width: 550px; }
+
+.cart-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.cart-row img { width: 80px; height: 100px; object-fit: cover; }
+
+#totalPrice { text-align: right; }
+
+.cart-actions { display: flex; gap: 10px; }
+.cart-actions button { flex: 1; }

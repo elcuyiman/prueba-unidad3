@@ -1,0 +1,83 @@
+/* tienda.css - estilos exclusivos de la tienda */
+.carousel-section { margin-bottom: 3rem; }
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    min-width: 220px;
+    justify-content: center;
+}
+
+.carousel-arrow {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.carousel-arrow:hover { background: var(--accent-dark); }
+
+.carousel-label { text-align: center; color: #777; margin-top: 0.5rem; font-size: 0.85rem; }
+
+.game-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.game-card {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    text-align: center;
+    min-width: 200px;
+    max-width: 200px;
+    background: var(--card-bg);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.game-card.featured { min-width: 240px; max-width: 240px; }
+
+.game-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+.game-card h3 { margin: 0.3rem 0; font-size: 1rem; }
+.game-card .btn-primary { width: 100%; padding: 0.5rem; margin-top: 0.5rem; }
+
+.bienvenida { margin-right: 6px; }
+.btn-admin-link {
+    background: var(--accent-color);
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.btn-login-link {
+    background: var(--accent-color);
+    color: #fff !important;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+}
+
+.contact-footer { display: flex; justify-content: center; }
+.contact-form { max-width: 500px; width: 100%; text-align: left; }
+
+@media (max-width: 600px) {
+    header.site-header { flex-direction: column; }
+}

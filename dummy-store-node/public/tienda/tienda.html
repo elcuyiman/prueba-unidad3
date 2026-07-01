@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Store - Tienda</title>
+    <link rel="stylesheet" href="/shared/shared.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Dummy Store</div>
+        <div class="user-controls" id="userControls"></div>
+    </header>
+
+    <main class="site-main">
+        <section class="carousel-section">
+            <h2>Reserva los Próximos Juegos</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow" onclick="moverReservas(-1)" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-track" id="reservasTrack"></div>
+                <button class="carousel-arrow" onclick="moverReservas(1)" aria-label="Siguiente">&#10095;</button>
+            </div>
+            <p class="carousel-label" id="reservasLabel"></p>
+        </section>
+
+        <div id="categoriasContainer">
+            <!-- Una sección por categoría, cada una con su propio carrusel de flechas -->
+        </div>
+    </main>
+
+    <footer class="site-footer contact-footer">
+        <div class="contact-form">
+            <h3>Contacto / Enviar Mensaje al Admin</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <textarea id="mensajeAdmin" rows="3" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="tienda.js"></script>
+</body>
+</html>

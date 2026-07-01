@@ -1,0 +1,103 @@
+{
+  "usuarios": [
+    {
+      "username": "admin",
+      "email": "admin@dummystore.com",
+      "password": "fe14437c0a14d053decda0037dc85f03885846b832c1f62d3604f722dc1f68b2",
+      "rol": "admin"
+    }
+  ],
+  "juegos": [
+    {
+      "id": 1,
+      "titulo": "GTA VI",
+      "precio": 69.99,
+      "categoria": "reservas",
+      "imagen": "https://www.rockstargames.com/VI/_next/static/media/GTAVI_FOB_UltimateEdition_Desktop_en_us.04i20kdr.r_mm.jpg?akim=1&imdensity=1&imwidth=1440"
+    },
+    {
+      "id": 2,
+      "titulo": "Zelda: Echoes",
+      "precio": 59.99,
+      "categoria": "reservas",
+      "imagen": "https://i.3djuegos.com/juegos/19817/the_legend_of_zelda_echoes_of_wisdom/fotos/ficha/the_legend_of_zelda_echoes_of_wisdom-5900889.webp"
+    },
+    {
+      "id": 3,
+      "titulo": "Silksong 2",
+      "precio": 29.99,
+      "categoria": "reservas",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMjA4NWE1YWMtNjQ4ZC00Y2Q3LWFjMGEtNGVhM2FmYzJjMzM1XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "The Last of Us Part 3",
+      "precio": 89.99,
+      "categoria": "aventura",
+      "imagen": "https://fotografias-2.larazon.es/assets/videojuegos/2025/05/last-of-us-3-asf.1747824143.0868.jpg?width=1900&height=1069"
+    },
+    {
+      "id": 5,
+      "titulo": "Uncharted 5",
+      "precio": 49.99,
+      "categoria": "aventura",
+      "imagen": "https://scontent.fiqq3-1.fna.fbcdn.net/v/t39.30808-6/490127158_1129676612507990_1844168378428907335_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s640x640&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGlemYrt2NzYEDVVPVPtnQAEIE8P0VuP2oQgTw_RW4_arXAJkaXGGunN7IH-6PPa0L8kH0eSOsCueH5gQcXs6SL&_nc_ohc=5beFuQX03nYQ7kNvwH26IQN&_nc_oc=Adoj1-HnfI128BaaMGb_NMdXOWRs0LkpDPACu4GYWjQNS9Aqsg1a8shBxA3b1q7I3wM&_nc_zt=23&_nc_ht=scontent.fiqq3-1.fna&_nc_gid=VdBhXK0JxcrjrXgPpWW25Q&_nc_ss=7b2a8&oh=00_AQC4Za9Ctt3-NIkuxjmKMawVMRUOAI82nfsLagYawhvAaw&oe=6A4A4754"
+    },
+    {
+      "id": 6,
+      "titulo": "Tomb Raider X",
+      "precio": 44.99,
+      "categoria": "aventura",
+      "imagen": "https://media.revistagq.com/photos/624d97847e3f6c423b544745/1:1/w_1000,h_1000,c_limit/Tomb-Raider.png"
+    },
+    {
+      "id": 7,
+      "titulo": "FIFA 26",
+      "precio": 39.99,
+      "categoria": "deportes",
+      "imagen": "https://tecnoplay.cl/10115-medium_default/digitales-ps4-ea-sports-fc-26-fifa-26-ps4.webp"
+    },
+    {
+      "id": 8,
+      "titulo": "NBA 2K27",
+      "precio": 34.99,
+      "categoria": "deportes",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCiSfeuvEv7LWGq1cxagDeqdEVkP4xsdaDPQ&s"
+    },
+    {
+      "id": 9,
+      "titulo": "Gran Turismo 8",
+      "precio": 54.99,
+      "categoria": "deportes",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQr6UOPGD1JN3iMwTBhexd0ZUVVOXq-SKw&s"
+    },
+    {
+      "id": 10,
+      "titulo": "Resident Evil 9",
+      "precio": 79.99,
+      "categoria": "terror",
+      "imagen": "https://static0.srcdn.com/wordpress/wp-content/uploads/sharedimages/2025/06/resident-evil-requiem-tag-page-cover-art.jpg?q=50&fit=contain&w=480&dpr=1.5"
+    },
+    {
+      "id": 11,
+      "titulo": "Silent Hill: short message",
+      "precio": 49.99,
+      "categoria": "terror",
+      "imagen": "https://pics.filmaffinity.com/Silent_Hill_The_Short_Message-921628039-mmed.jpg"
+    },
+    {
+      "id": 12,
+      "titulo": "Dead Space",
+      "precio": 39.99,
+      "categoria": "terror",
+      "imagen": "https://store-images.s-microsoft.com/image/apps.14799.14523500754146655.a7d389ce-5ea0-419a-b5c9-ec5e93979092.fc909350-0fe9-4542-abf6-c5928a6793fc"
+    }
+  ],
+  "mensajes": [],
+  "categorias": [
+    "reservas",
+    "aventura",
+    "deportes",
+    "terror"
+  ]
+}
